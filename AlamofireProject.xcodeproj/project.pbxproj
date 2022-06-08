@@ -14,6 +14,11 @@
 		FF2C01EC2845C77B00CB8EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2C01EA2845C77B00CB8EB4 /* Main.storyboard */; };
 		FF2C01EE2845C77D00CB8EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2C01ED2845C77D00CB8EB4 /* Assets.xcassets */; };
 		FF2C01F12845C77D00CB8EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2C01EF2845C77D00CB8EB4 /* LaunchScreen.storyboard */; };
+		FF2C02002845D2E700CB8EB4 /* AlamofireModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C01FF2845D2E700CB8EB4 /* AlamofireModel.swift */; };
+		FF65B4A4284F08040018A838 /* UIColor+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65B4A3284F08040018A838 /* UIColor+Extention.swift */; };
+		FF65B4A6284F28880018A838 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65B4A5284F28880018A838 /* ModalViewController.swift */; };
+		FF65B4A8284FA85A0018A838 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65B4A7284FA85A0018A838 /* ModalView.swift */; };
+		FF97C36A284E429D00BE93C5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF97C369284E429D00BE93C5 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		FF2C01ED2845C77D00CB8EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF2C01F02845C77D00CB8EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF2C01F22845C77D00CB8EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF2C01FF2845D2E700CB8EB4 /* AlamofireModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireModel.swift; sourceTree = "<group>"; };
+		FF65B4A3284F08040018A838 /* UIColor+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extention.swift"; sourceTree = "<group>"; };
+		FF65B4A5284F28880018A838 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		FF65B4A7284FA85A0018A838 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		FF97C369284E429D00BE93C5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +127,10 @@
 		FF2C01FB2845C96900CB8EB4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				FF2C01E82845C77B00CB8EB4 /* ViewController.swift */,
+				FFD309E628507F8A0067DB7E /* ModalView */,
+				FFD309E428507F680067DB7E /* TableView */,
+				FF65B4A2284F07F50018A838 /* Extension */,
+				FF2C01FE2845D2D200CB8EB4 /* Model */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -137,6 +150,48 @@
 				FF2C01EF2845C77D00CB8EB4 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FF2C01FE2845D2D200CB8EB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF2C01FF2845D2E700CB8EB4 /* AlamofireModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF65B4A2284F07F50018A838 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FF65B4A3284F08040018A838 /* UIColor+Extention.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FFD309E428507F680067DB7E /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				FFD309E528507F7F0067DB7E /* TableViewCell */,
+				FF2C01E82845C77B00CB8EB4 /* ViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		FFD309E528507F7F0067DB7E /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF97C369284E429D00BE93C5 /* TableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		FFD309E628507F8A0067DB7E /* ModalView */ = {
+			isa = PBXGroup;
+			children = (
+				FF65B4A5284F28880018A838 /* ModalViewController.swift */,
+				FF65B4A7284FA85A0018A838 /* ModalView.swift */,
+			);
+			path = ModalView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF65B4A4284F08040018A838 /* UIColor+Extention.swift in Sources */,
+				FF97C36A284E429D00BE93C5 /* TableViewCell.swift in Sources */,
+				FF65B4A8284FA85A0018A838 /* ModalView.swift in Sources */,
+				FF2C02002845D2E700CB8EB4 /* AlamofireModel.swift in Sources */,
 				FF2C01E92845C77B00CB8EB4 /* ViewController.swift in Sources */,
 				FF2C01E52845C77A00CB8EB4 /* AppDelegate.swift in Sources */,
 				FF2C01E72845C77B00CB8EB4 /* SceneDelegate.swift in Sources */,
+				FF65B4A6284F28880018A838 /* ModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
