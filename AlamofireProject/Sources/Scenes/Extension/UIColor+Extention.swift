@@ -6,4 +6,5 @@ extension UIColor {
     static var c1C1C1C: UIColor { UIColor(red: 28.0/255.0, green: 28.0/255.0, blue: 28.0/255.0, alpha: 1) }
     static var c131313: UIColor { UIColor(red: 19.0/255.0, green: 19.0/255.0, blue: 19.0/255.0, alpha: 1) }
     static var ff585b: UIColor { UIColor(red: 255.0/255.0, green: 88.0/255.0, blue: 91.0/255.0, alpha: 1) }
+    static var ed1d24: UIColor { UIColor(red: 237.0/255.0, green: 29.0/255.0, blue: 36.0/255.0, alpha: 1) }
 }

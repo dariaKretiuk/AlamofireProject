@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F405C45EC936F92828F3044B /* libPods-AlamofireProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6ACDC06A340E28B833C7CB3 /* libPods-AlamofireProject.a */; };
 		FF2C01E52845C77A00CB8EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C01E42845C77A00CB8EB4 /* AppDelegate.swift */; };
-		FF2C01E72845C77B00CB8EB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C01E62845C77A00CB8EB4 /* SceneDelegate.swift */; };
 		FF2C01E92845C77B00CB8EB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C01E82845C77B00CB8EB4 /* ViewController.swift */; };
 		FF2C01EC2845C77B00CB8EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2C01EA2845C77B00CB8EB4 /* Main.storyboard */; };
 		FF2C01EE2845C77D00CB8EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2C01ED2845C77D00CB8EB4 /* Assets.xcassets */; };
@@ -27,7 +26,6 @@
 		E6ACDC06A340E28B833C7CB3 /* libPods-AlamofireProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AlamofireProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2C01E12845C77A00CB8EB4 /* AlamofireProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2C01E42845C77A00CB8EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF2C01E62845C77A00CB8EB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FF2C01E82845C77B00CB8EB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF2C01EB2845C77B00CB8EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF2C01ED2845C77D00CB8EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				FF2C01E42845C77A00CB8EB4 /* AppDelegate.swift */,
-				FF2C01E62845C77A00CB8EB4 /* SceneDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -297,7 +294,6 @@
 				FF2C02002845D2E700CB8EB4 /* AlamofireModel.swift in Sources */,
 				FF2C01E92845C77B00CB8EB4 /* ViewController.swift in Sources */,
 				FF2C01E52845C77A00CB8EB4 /* AppDelegate.swift in Sources */,
-				FF2C01E72845C77B00CB8EB4 /* SceneDelegate.swift in Sources */,
 				FF65B4A6284F28880018A838 /* ModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,3 +28,25 @@ struct Item: Decodable {
     let name: String
     let type: String?
 }
+
+
+
+
+
+struct ListCharacters: Decodable {
+    let data: ResultsCharacters
+}
+
+struct ResultsCharacters: Decodable {
+    let results: [InfoCharacters]
+}
+
+struct InfoCharacters: Decodable {
+    let name: String
+    let comics: Comics
+    let description: String
+}
+
+struct Comics: Decodable {
+    let available: Int
+}

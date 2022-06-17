@@ -1,0 +1,6 @@
+module Pods_AlamofireProject {
+  umbrella header "Pods-AlamofireProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
