@@ -139,7 +139,7 @@ class ViewController: UIViewController {
                 return
             }
             self.models = characters.data
-            self.isSearch = true
+//            self.isSearch = true
             self.tableView.reloadData()
         }
     }
@@ -203,9 +203,18 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
         if isSearch {
             let modelView = ModalViewController(model: models.results[indexPath.row])
             self.present(modelView, animated: true, completion: nil)
+        }
+        else {
+            self.loadData(nameCharacters: self.listCharacters.results[indexPath.row].name)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                guard let model = self.models.results.first else { return }
+                let modelView = ModalViewController(model: model)
+                self.present(modelView, animated: true, completion: nil)
+            }
         }
     }
 }

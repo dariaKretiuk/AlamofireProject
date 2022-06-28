@@ -18,6 +18,7 @@
 		FF65B4A6284F28880018A838 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65B4A5284F28880018A838 /* ModalViewController.swift */; };
 		FF65B4A8284FA85A0018A838 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65B4A7284FA85A0018A838 /* ModalView.swift */; };
 		FF97C36A284E429D00BE93C5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF97C369284E429D00BE93C5 /* TableViewCell.swift */; };
+		FFC572E2286B3FC20038AFFD /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC572E1286B3FC20038AFFD /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FF65B4A5284F28880018A838 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		FF65B4A7284FA85A0018A838 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		FF97C369284E429D00BE93C5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FFC572E1286B3FC20038AFFD /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				FF65B4A3284F08040018A838 /* UIColor+Extention.swift */,
+				FFC572E1286B3FC20038AFFD /* UIImageView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			files = (
 				FF65B4A4284F08040018A838 /* UIColor+Extention.swift in Sources */,
 				FF97C36A284E429D00BE93C5 /* TableViewCell.swift in Sources */,
+				FFC572E2286B3FC20038AFFD /* UIImageView+Extension.swift in Sources */,
 				FF65B4A8284FA85A0018A838 /* ModalView.swift in Sources */,
 				FF2C02002845D2E700CB8EB4 /* AlamofireModel.swift in Sources */,
 				FF2C01E92845C77B00CB8EB4 /* ViewController.swift in Sources */,

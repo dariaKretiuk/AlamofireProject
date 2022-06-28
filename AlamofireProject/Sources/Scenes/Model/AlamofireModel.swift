@@ -12,6 +12,7 @@ struct Results: Decodable {
 struct Result: Decodable {
     let name: String
     let description: String
+    let thumbnail: Thumbnail
     let comics: Items
     let series: Items
     let stories: Items
@@ -29,6 +30,15 @@ struct Item: Decodable {
     let type: String?
 }
 
+struct Thumbnail: Decodable {
+    let path: String
+    let extensionImage: String
+    
+    enum CodingKeys: String, CodingKey {
+        case path = "path"
+        case extensionImage = "extension"
+    }
+}
 
 
 
@@ -45,6 +55,7 @@ struct InfoCharacters: Decodable {
     let name: String
     let comics: Comics
     let description: String
+    let thumbnail: Thumbnail
 }
 
 struct Comics: Decodable {

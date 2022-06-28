@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import Alamofire
 
 class TableViewCell: UITableViewCell {
     
@@ -9,16 +10,17 @@ class TableViewCell: UITableViewCell {
     
     private let imageContainer: UIView = {
         let view = UIView()
+        view.layer.cornerRadius = 15
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
     private let image: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(systemName: "person")
         image.tintColor = .white
         image.backgroundColor = .lightGray
         image.layer.cornerRadius = 15
+        image.clipsToBounds = true
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
@@ -139,6 +141,21 @@ class TableViewCell: UITableViewCell {
         labelName.text = model.name
         labelComics.text = "Кол-во комиксов: " + String(model.comics.available)
         labelDiscription.text = model.description
+        self.load(url: URL(string: "\(model.thumbnail.path).\(model.thumbnail.extensionImage)")!)
+        
+    }
+    
+    private func load(url: URL){
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image.image = image
+                        self?.image.layer.cornerRadius = 15
+                    }
+                }
+            }
+        }
     }
 }
 
